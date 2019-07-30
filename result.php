@@ -6,21 +6,27 @@
 //クラス:IH-12A-905
 //*************************
 
+require_once './func/func.php';
+require_once './config/config.php';
+
+
 $input = array(
   'title'       => '',
   'user_name'   => '',
-  'description' => '',
-);
-$error_mes = array(
-  'title'       => '',
-  'user_name'   => '',
-  'description' => '',
+  'staple_food' => '',
+  'taste'       => '',
+  'smell'       => '',
+  'spiciness'   => '',
 );
 $material = array(
   'staple_food' => '',
   'taste'       => '',
   'smell'       => '',
   'spiciness'   => '',
+);
+$error_mes = array(
+  'title'       => '',
+  'user_name'   => '',
 );
 $date     = new DateTimeImmutable();
 
@@ -41,14 +47,14 @@ if(isset($_POST['contribute'])) {
   if($input['user_name'] === '') {
     $error_mes['user_name'] = 'ニックネームを入力してください。';
   }
-  if($input['title'] === '') {
-    $error_mes['title'] = 'タイトルを入力してください。';
-  }
   //文字数チェック
   if(mb_strlen($input['title']) <= 30) {
-    $error_mes['title'] = 'タイトルを入力してください。';
+    $error_mes['title'] = '';
   }
-  //まだ途中
+  if(mb_strlen($input['user_name']) <= 30) {
+    $error_mes['user_name'] = '';
+  }
+  
 
   //データベースに書き込み
   $sql = "INSERT INTO post(name,main,taste,flavor,hot_taste,post_date,nice) VALUES(?,?,?,?,?,?,0)";
@@ -61,9 +67,10 @@ if(isset($_POST['cook'])) {
     $material[$key] = (string)filter_input(INPUT_POST, $key);
   }
 }
-//DBから読み込み
 
 
+//材料からカレーを算出
+//DBから説明読み込み
 
 
 require_once './tpl/result.php';
