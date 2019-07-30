@@ -5,3 +5,99 @@
   width:100%;
     display:block;
 }
+
+#second .cursol_second{
+  opacity:0;
+  margin:0 auto;
+  padding:0 auto;
+  position:absolute;
+  left:285%;
+  top:42%;
+  font-size:100px;
+  transition:0.3s;
+}
+#second .cursolback_second{
+  margin:0 auto;
+  padding:0 auto;
+  position:absolute;
+  left:205%;
+  top:42%;
+  font-size:100px;
+  transition:0.3s;
+}
+#second .cursolback_second:hover{
+  top:41%;
+  font-size:115px;
+  transition:0.3s;
+}
+#second .second_board{
+  opacity:0;
+  position:absolute;
+  text-align:center;
+  top:70%;
+  left:220%;
+  width:15%;
+  font-size:25px;
+  border:solid 2px black;
+  line-height:65px;
+  border-radius:20px 20px/20px 20px;
+  z-index:10;
+  background-color:white;
+}
+#second .second_message{
+  opacity:0;
+  position:absolute;
+  text-align:center;
+  top:73%;
+  left:225%;
+  width:60%;
+  font-size:25px;
+  border:solid 2px black;
+  line-height:75px;
+  border-radius:20px 20px/20px 20px;
+  z-index:1;
+}
+#second .cursol_second:hover{
+  top:41%;
+  font-size:115px;
+  transition:0.3s;
+}
+#second a{
+  text-decoration:none;
+  color:black;
+}
+
+
+#second h1{
+  margin:0 auto;
+  padding:0 auto;
+  position:relative;
+  top:10%;
+  left:42%;
+  font-size:60px;
+}
+#second .img_second{
+  position:relative;
+  align-items:center;
+  top:155px;
+  left:530px;
+  width:18%;
+  max-width:400px;
+}
+#second table{
+  margin:0 auto;
+  padding:0 auto;
+  position:absolute;
+  top:32%;
+  left:250%;
+  font-size:30px;
+  width:30%;
+}
+#second button{
+  font-size:30px;
+  line-height:100px;
+  background-color:white;
+  border:solid 1px white;
+  transition:0.3s;
+  width:500px;
+}
