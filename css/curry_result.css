@@ -1,0 +1,175 @@
+*{
+  margin:0 auto;
+  padding:0 auto;
+}
+img{
+  max-width:500px;
+}
+
+input{
+  border:none;
+  border-bottom:solid 2px black;
+  width:350px;
+  height:2em;
+  font-size:15px;
+}
+button{
+  border:none;
+  background-color:white;
+  font-size:15px;
+  line-height:40px;
+  width:100%;
+    transition:0.3s;
+    border:solid 1px black;
+}
+button:hover{
+  background-color:black;
+  color:white;
+  transition:0.3s;
+}
+.button_submit{
+  position:relative;
+  top:10px;
+}
+#container{
+  display:grid;
+  grid-template-rows: 60px 650px 1fr;
+  grid-template-columns: 900px 1fr;
+  height:100vh;
+  width:100%;
+  grid-template-areas:
+  "areaD areaD"
+  "areaA areaB"
+  "areaC areaB";
+}
+#header{
+    opacity:0;
+  animation-name:fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+  animation-delay:0.5s;
+  line-height:1000px;
+  font-size:25px;
+  grid-area:areaD;
+}
+#result_image{
+  opacity:0;
+  animation-name:fadein2;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-delay:4s;
+  grid-area:areaA;
+  position:relative;
+  top:23%;
+  left:10%;
+}
+#color_image{
+  position:relative;
+  top:-12%;
+  left:28%;
+}
+#color_image .color{
+  background-color:skyblue;
+  border:solid 3px black;
+  width:23%;
+  font-size:70px;
+  border-radius:30px 30px/30px 30px;
+}
+#description{
+  opacity:0;
+  animation-name:fadein2;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-delay:4s;
+  grid-area:areaB;
+}
+#description h1{
+  padding:0 auto;
+  margin:0 auto;
+  padding-top:80px;
+  line-height:150px;
+}
+#description table{
+  padding:50px;
+  border:solid 1px black;
+  border-radius:25px 25px/25px 25px;
+  position:relative;
+  font-size:22px;
+}
+#description td{
+  padding:20px;
+  padding-bottom:50px;
+}
+#board_form{
+  position:relative;
+  text-align:center;
+  left:15%;
+  top:10%;
+  mardin:0 auto;
+  padding:0 auto;
+  opacity:0;
+  animation-name:fadein2;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+  animation-delay:5s;
+  grid-area:areaC;
+  width:70%;
+}
+.board_click{
+  background-color:white;
+  border:none;
+  font-size:20px;
+  width:100%;
+  line-height:75px;
+  border:solid 2px black;
+  z-index:99;
+}
+.board_table{
+  position:absolute;
+  top:8%;
+  left:8%;
+  line-height:30px;
+  opacity:0;
+  font-size:18px;
+  z-index:-99;
+}
+.board_table td{
+  padding:15px;
+}
+.board_click a{
+  padding:0 auto;
+  margin:0 auto;
+  text-decoration:none;
+  color:black;
+  line-height:75px;
+  width:100%;
+}
+
+
+@keyframes fadeIn{
+  0%{
+    line-height:1000px;
+    opacity:0;
+  }
+  30%{
+    opacity:1;
+    line-height:1000px;
+  }
+  50%{
+    line-height:1000px;
+    opacity:1;
+  }
+  100%{
+    line-height:170px;
+    opacity:1;
+  }
+}
+@keyframes fadein2 {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+
+}
