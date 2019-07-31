@@ -46,6 +46,10 @@
   background-color:white;
 }
 #third .third_message{
+  max-height:150px;
+  padding-left:40px;
+  padding-right:40px;
+  margin-top:50px;
   opacity:0;
   position:absolute;
   text-align:center;
@@ -70,11 +74,12 @@
 
 
 #third h1{
+  text-align:center;
   margin:0 auto;
   padding:0 auto;
   position:relative;
   top:10%;
-  left:42%;
+  /* left:42%; */
   font-size:60px;
 }
 #third .img_third{
@@ -92,13 +97,5 @@
   top:32%;
   left:350%;
   font-size:30px;
-  width:30%;
-}
-#third button{
-  font-size:30px;
-  line-height:100px;
-  background-color:white;
-  border:solid 1px white;
-  transition:0.3s;
-  width:500px;
+  width:50%;
 }

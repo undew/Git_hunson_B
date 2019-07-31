@@ -17,8 +17,15 @@
 #result .curry_result{
   position:relative;
   top:50%;
-  font-size:30px;
   left:35%;
+  transition:0.3s;
+}
+#result .curry_result:hover{
+  top:48%;
+  transition:0.3s;
+}
+#result button{
+  font-size:30px;
   text-align:center;
   transition:0.3s;
   background-color:white;
@@ -27,7 +34,7 @@
   border:solid 1px black;
 
 }
-#result .curry_result:hover{
+#result button:hover{
   top:48%;
   transition:0.3s;
   line-height:100px;
@@ -53,4 +60,8 @@
 a{
   text-decoration:none;
   color:black;
+}
+button{
+  background-color:white;
+  border:none;
 }

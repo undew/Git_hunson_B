@@ -42,7 +42,7 @@ var ht3m =  $('#ht3m').val();
     $('.first_board').css('opacity','1');
     $('.first_message').css('opacity','1');
     $('.first_message').css('transition','0.3s');
-      $('.first_h3').html('<img src="img/curry_ko.png" class="img_first"></img>');
+      $('.first_h3').html('<img src="img/kome_hakumai.png" class="img_first"></img>');
     $('#lavel1').css('background-color','yellow');
     $('#lavel1').css('border','solid','0.5px','black');
     $('#lavel2').css('border','none');
@@ -58,7 +58,7 @@ var ht3m =  $('#ht3m').val();
     function(){
       $('.first_board').css('opacity','1');
       $('.first_message').css('opacity','1');
-      $('.first_h3').html('<img src="img/cooking_hoajyao.png" class="img_first"></img>');
+      $('.first_h3').html('<img src="img/food_currypan.png" class="img_first"></img>');
       $('#lavel2').css('background-color','yellow');
       $('#lavel2').css('border','solid','0.5px','black');
       $('#lavel1').css('border','none');
@@ -74,7 +74,7 @@ var ht3m =  $('#ht3m').val();
       function(){
         $('.first_board').css('opacity','1');
         $('.first_message').css('opacity','1');
-      $('.first_h3').html('<img src="img/cooking_spice_pepper_tsubu.png" class="img_first"></img>');
+      $('.first_h3').html('<img src="img/pan_india_naan.png" class="img_first"></img>');
         $('#lavel3').css('background-color','yellow');
         $('#lavel3').css('border','solid','0.5px','black');
         $('#lavel1').css('border','none');

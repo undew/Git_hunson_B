@@ -29,13 +29,13 @@
         <h3 class="first_h3"><img src="img/curry_ko.png" class="img_first"></h3>
         <table>
           <tr>
-            <td class="click_first"><input type="radio" id="lavel1" name="staple_food" value="1"><?php echo $main_row[0]['name'] ?></td>
+            <td class="click_first"><label id="lavel1"><input type="radio" name="staple_food" value="1"><?php echo $main_row[0]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_first"><input type="radio" id="lavel2" name="staple_food" value="2"><?php echo $main_row[1]['name'] ?></td>
+            <td class="click_first"><label id="lavel2"><input type="radio" name="staple_food" value="2"><?php echo $main_row[1]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_first"><input type="radio" id="lavel3" name="staple_food" value="3"><?php echo $main_row[2]['name'] ?></td>
+            <td class="click_first"><label id="lavel3"><input type="radio" name="staple_food" value="3"><?php echo $main_row[2]['name'] ?></label></td>
           </tr>
 
         </table>
@@ -58,13 +58,13 @@
         <h3 class="second_h3"><img src="img/curry_ko.png" class="img_second"></h3>
         <table>
           <tr>
-            <td class="click_second"><input type="radio" id="lavel4" name="taste" value="1"><?php echo $taste_row[0]['name'] ?></td>
+            <td class="click_second"><label id="lavel4"><input type="radio" name="taste" value="1"><?php echo $taste_row[0]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_second"><input type="radio" id="lavel5" name="taste" value="2"><?php echo $taste_row[1]['name'] ?></td>
+            <td class="click_second"><label id="lavel5"><input type="radio" name="taste" value="2"><?php echo $taste_row[1]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_second"><input type="radio" id="lavel6" name="taste" value="3"><?php echo $taste_row[2]['name'] ?></td>
+            <td class="click_second"><label id="lavel6"><input type="radio" name="taste" value="3"><?php echo $taste_row[2]['name'] ?></label></td>
           </tr>
 
         </table>
@@ -89,13 +89,13 @@
         <h3 class="third_h3"><img src="img/curry_ko.png" class="img_third"></h3>
         <table>
           <tr>
-            <td class="click_third"><input type="radio" id="lavel7" name="smell" value="1"><?php echo $flavor_row[0]['name'] ?></td>
+            <td class="click_third"><label id="lavel7"><input type="radio" name="smell" value="1"><?php echo $flavor_row[0]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_third"><input type="radio" id="lavel8" name="smell" value="2"><?php echo $flavor_row[1]['name'] ?></td>
+            <td class="click_third"><label id="lavel8"><input type="radio" name="smell" value="2"><?php echo $flavor_row[1]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_third"><input type="radio" id="lavel9" name="smell" value="3"><?php echo $flavor_row[2]['name'] ?></td>
+            <td class="click_third"><label id="lavel9"><input type="radio" name="smell" value="3"><?php echo $flavor_row[2]['name'] ?></label></td>
           </tr>
 
         </table>
@@ -118,13 +118,13 @@
         <h3 class="four_h3"><img src="img/curry_ko.png" class="img_four"></h3>
         <table>
           <tr>
-            <td class="click_four"><input type="radio" id="lavel10" name="spiciness" value="1"><?php echo $hot_taste_row[0]['name'] ?></td>
+            <td class="click_four"><label id="lavel10"><input type="radio" name="spiciness" value="1"><?php echo $hot_taste_row[0]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_four"><input type="radio" id="lavel11" name="spiciness" value="2"><?php echo $hot_taste_row[1]['name'] ?></td>
+            <td class="click_four"><label id="lavel11"><input type="radio" name="spiciness" value="2"><?php echo $hot_taste_row[1]['name'] ?></label></td>
           </tr>
           <tr>
-            <td class="click_four"><input type="radio" id="lavel12" name="spiciness" value="3"><?php echo $hot_taste_row[2]['name'] ?></td>
+            <td class="click_four"><label id="lavel12"><input type="radio" name="spiciness" value="3"><?php echo $hot_taste_row[2]['name'] ?></label></td>
           </tr>
 
         </table>
