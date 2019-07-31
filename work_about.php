@@ -77,7 +77,6 @@ if (isset($_POST['submit'])) {
     $err['msg'] = 'メッセージは50文字以内で入力してください';
   }
 
-  //エラー文が一つも出ていない時
   if (array_search(!'', $err) === false) {
     $cn = new mysqli(HOST, DB_USER, DB_PASS, DB_NAME);
     if (mysqli_connect_errno()) {
@@ -89,11 +88,16 @@ if (isset($_POST['submit'])) {
     $stmt = $cn->prepare($query);
     $stmt->execute();
     $max_id = fetch_all($stmt);
-    is_null($max_id[0]) ? $max_id[0] = 1 : $max_id[0] += 1;
+    var_dump($max_id);
+    if(empty($max_id[0])){
+      $max_id[0] = 1;
+    }else {
+      $max_id[0] += 1;
+    }
 
-    $query = "INSERT INTO reply(id,post_id,msg,post_date) VALUES(?,?,?,now())";
+    $query = "INSERT INTO reply(id,post_id,name,msg,post_date) VALUES(?,?,?,?,now())";
     $stmt = $cn->prepare($query);
-    $stmt->bind_param("iis", $max_id[0], $id, $msg);
+    $stmt->bind_param("iiss", $max_id[0], $id, $name, $msg);
     $stmt->execute();
     $stmt->close();
     $cn->close();

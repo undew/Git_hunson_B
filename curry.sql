@@ -58,9 +58,17 @@ INSERT INTO `post` (`id`, `title`, `name`, `main`, `taste`, `flavor`, `hot_taste
 CREATE TABLE `reply` (
   `id` int(11) NOT NULL,
   `post_id` int(11) NOT NULL,
-  `msg` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `msg` text NOT NULL,
   `post_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- テーブルのデータのダンプ `reply`
+--
+
+INSERT INTO `reply` (`id`, `post_id`, `name`, `msg`, `post_date`) VALUES
+(1, 3, '佐藤', '0', '2019-07-31 17:19:55');
 
 -- --------------------------------------------------------
 
