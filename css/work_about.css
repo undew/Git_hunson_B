@@ -53,6 +53,11 @@ button:hover{
   background-color:white;
     transition:0.3s;
 }
+#header a{
+  text-decoration:none;
+  border:none;
+  color:black;
+}
 #header:hover{
   width:10%;
   height:5%;
