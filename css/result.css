@@ -5,3 +5,52 @@
   width:100%;
     display:block;
 }
+#result h1{
+  position:relative;
+  top:37%;
+  left:2.5%;
+  font-size:50px;
+  margin:0 auto;
+  padding:0 auto;
+  text-align:center;
+}
+#result .curry_result{
+  position:relative;
+  top:50%;
+  font-size:30px;
+  left:35%;
+  text-align:center;
+  transition:0.3s;
+  background-color:white;
+  width:35%;
+  line-height:60px;
+  border:solid 1px black;
+
+}
+#result .curry_result:hover{
+  top:48%;
+  transition:0.3s;
+  line-height:100px;
+  background-color:black;
+  color:white;
+  border:solid 1px black;
+  border-radius:20px 20px/20px 20px;
+}
+#result .cursolback_reslut{
+  margin:0 auto;
+  padding:0 auto;
+  position:absolute;
+  left:505%;
+  top:42%;
+  font-size:100px;
+  transition:0.3s;
+}
+#result .cursolback_reslut:hover{
+  top:41%;
+  font-size:115px;
+  transition:0.3s;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
