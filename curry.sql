@@ -40,6 +40,15 @@ CREATE TABLE `post` (
   `nice` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- テーブルのデータのダンプ `post`
+--
+
+INSERT INTO `post` (`id`, `title`, `name`, `main`, `taste`, `flavor`, `hot_taste`, `post_date`, `nice`) VALUES
+(1, 'カレー', 'さとう', 1, 1, 1, 1, '2019-07-31 00:00:00', 4),
+(2, '辛いカレー', 'みね', 1, 1, 1, 1, '2019-07-30 00:00:00', 6),
+(3, '甘いカレー', 'あんどう', 1, 1, 1, 1, '2019-07-31 23:00:00', 5);
+
 -- --------------------------------------------------------
 
 --
@@ -109,7 +118,7 @@ ALTER TABLE `spice`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `spice`

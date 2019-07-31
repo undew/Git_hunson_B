@@ -1,7 +1,6 @@
 *{
   margin:0 auto;
   padding:0 auto;
-  
 }
 img{
   max-width:500px;
@@ -34,27 +33,37 @@ button:hover{
 }
 #container{
   display:grid;
-  grid-template-rows: 60px 650px 1fr;
+  grid-template-rows:650px 1fr;
   grid-template-columns: 900px 1fr;
   height:100vh;
   width:100%;
   grid-template-areas:
-  "areaD areaD"
   "areaA areaB"
   "areaC areaB";
 }
+
 #header{
-    opacity:0;
-  animation-name:fadeIn;
-  animation-duration: 3s;
-  animation-fill-mode:forwards;
-  animation-delay:0.5s;
-  line-height:1000px;
-  font-size:25px;
-  grid-area:areaD;
+  position:absolute;
+  font-weight:bold;
+  padding:40px;
+  width:15%;
+  height:15%;
+  padding-left:70px;
+  border:solid 1px white;
+  background-color:white;
+    transition:0.3s;
 }
+#header:hover{
+  width:10%;
+  height:5%;
+  border:solid 1px black;
+  background-color:black;
+  border-radius:0px 0px 50px 0px;
+  color:white;
+  transition:0.3s;
+}
+
 #result_image{
-  opacity:0;
   animation-name:fadein2;
   animation-duration: 1s;
   animation-fill-mode:forwards;
@@ -66,7 +75,7 @@ button:hover{
 }
 #color_image{
   position:relative;
-  top:-12%;
+  top:-18%;
   left:28%;
 }
 #color_image .color{
@@ -77,38 +86,60 @@ button:hover{
   border-radius:30px 30px/30px 30px;
 }
 #description{
-  opacity:0;
   animation-name:fadein2;
   animation-duration: 1s;
   animation-fill-mode:forwards;
   animation-delay:4s;
   grid-area:areaB;
 }
+#description table{
+  position:relative;
+  top:5%;
+}
 #description h1{
+  position:relative;
+  top:2.5%;
   padding:0 auto;
   margin:0 auto;
   padding-top:80px;
-  line-height:150px;
+  line-height:40px;
 }
-#description table{
-  padding:50px;
-  border:solid 1px black;
-  border-radius:25px 25px/25px 25px;
+#curry_comment{
   position:relative;
-  font-size:22px;
+  top:-7%;
+  border:solid 3px black;
+  border-radius:25px 25px/25px 25px;
+  height:500px;
+  overflow:scroll;
+  overflow-x:hidden;
 }
+#description .user_comment{
+  padding:10px;
+  margin:0 auto;
+  margin-left:0px;
+  padding-left:30px;
+  padding-right:300px;
+  position:relative;
+  font-size:15px;
+  border-bottom:solid 1px black;
+}
+
 #description td{
-  padding:20px;
-  padding-bottom:50px;
+
+  padding:8px;
+  padding-bottom:5px;
+}
+#description .user_name{
+  font-size:20px;
+  font-weight:bold;
 }
 #board_form{
   position:relative;
   text-align:center;
   left:15%;
-  top:10%;
+  top:-100%;
   mardin:0 auto;
   padding:0 auto;
-  opacity:0;
   animation-name:fadein2;
   animation-duration: 1s;
   animation-fill-mode:forwards;
@@ -117,22 +148,36 @@ button:hover{
   width:70%;
 }
 .board_click{
+  position:relative;
+  top:80%;
   background-color:white;
   border:none;
   font-size:20px;
   width:100%;
-  line-height:75px;
+  line-height:175px;
   border:solid 2px black;
-  z-index:99;
+  z-index:-99;
+  border-radius:50px 0px / 50px 0px;
+}
+.nickname{
+  position:absolute;
+  z-index:1;
+  border:solid 2px black;
+  border-radius:20px 20px/20px 20px;
+  padding:20px;
+  background-color:white;
+  left:-10%;
+  top:73%;
 }
 .board_table{
   position:absolute;
-  top:8%;
-  left:8%;
+  top:68%;
+  left:60%;
   line-height:30px;
-  opacity:0;
   font-size:18px;
-  z-index:-99;
+  z-index:99;
+  border-bottom:none;
+  grid-area:areaB;
 }
 .board_table td{
   padding:15px;
@@ -146,31 +191,34 @@ button:hover{
   width:100%;
 }
 
-
-@keyframes fadeIn{
-  0%{
-    line-height:1000px;
-    opacity:0;
-  }
-  30%{
-    opacity:1;
-    line-height:1000px;
-  }
-  50%{
-    line-height:1000px;
-    opacity:1;
-  }
-  100%{
-    line-height:170px;
-    opacity:1;
-  }
+#title{
+  height:100vh;
+  padding:0 auto;
+  margin:0px;
 }
-@keyframes fadein2 {
-  0%{
-    opacity:0;
-  }
-  100%{
-    opacity:1;
-  }
-
+#title .title_name{
+  margin-left:200px;
+  margin-top:-50px;
+  margin-bottom:50px;
+  positon:relative;
+  text-align:center;
+  padding:30px;
+  border:solid 2px black;
+  border-radius:30px 30px/30px 30px;
+  font-size:25px;
+  width:20%;
+  z-index:1;
+  background-color:white;
+}
+#title .title_info{
+  position:relative;
+  padding:20px;
+  top:-10%;
+  padding-top:60px;
+  height:16%;
+  z-index:-10;
+  left:20%;
+  font-size:20px;
+  width:70%;
+  border:solid 2px black;
 }
