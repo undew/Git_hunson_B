@@ -1,5 +1,31 @@
 $(function(){
+var m1n =  $('#m1n').val();
+var m2n =  $('#m2n').val();
+var m3n =  $('#m3n').val();
+var m1m =  $('#m1m').val();
+var m2m =  $('#m2m').val();
+var m3m =  $('#m3m').val();
 
+var t1n =  $('#t1n').val();
+var t2n =  $('#t2n').val();
+var t3n =  $('#t3n').val();
+var t1m =  $('#t1m').val();
+var t2m =  $('#t2m').val();
+var t3m =  $('#t3m').val();
+
+var f1n =  $('#f1n').val();
+var f2n =  $('#f2n').val();
+var f3n =  $('#f3n').val();
+var f1m =  $('#f1m').val();
+var f2m =  $('#f2m').val();
+var f3m =  $('#f3m').val();
+
+var ht1n =  $('#ht1n').val();
+var ht2n =  $('#ht2n').val();
+var ht3n =  $('#ht3n').val();
+var ht1m =  $('#ht1m').val();
+var ht2m =  $('#ht2m').val();
+var ht3m =  $('#ht3m').val();
   $('button').click(
     function(){
       $('button:focus').css('outline','0');
@@ -14,7 +40,6 @@ $(function(){
   $('#lavel1').click(
   function(){
     $('.first_board').css('opacity','1');
-    $('.first_board').html('スパイス１');
     $('.first_message').css('opacity','1');
     $('.first_message').css('transition','0.3s');
       $('.first_h3').html('<img src="img/curry_ko.png" class="img_first"></img>');
@@ -24,6 +49,8 @@ $(function(){
     $('#lavel3').css('border','none');
     $('#lavel2').css('background-color','white');
     $('#lavel3').css('background-color','white');
+    $('.first_board').html(m1n);
+    $('.first_message').html(m1m);
     }
   );
 
@@ -38,6 +65,8 @@ $(function(){
       $('#lavel3').css('border','none');
       $('#lavel1').css('background-color','white');
       $('#lavel3').css('background-color','white');
+      $('.first_board').html(m2n);
+    $('.first_message').html(m2m);
       }
     );
 
@@ -52,6 +81,8 @@ $(function(){
         $('#lavel2').css('border','none');
         $('#lavel2').css('background-color','white');
         $('#lavel1').css('background-color','white');
+        $('.first_board').html(m3n);
+    $('.first_message').html(m3m);
         }
       );
 
@@ -75,6 +106,8 @@ $(function(){
         $('#lavel6').css('border','none');
         $('#lavel5').css('background-color','white');
         $('#lavel6').css('background-color','white');
+        $('.second_board').html(t1n);
+        $('.second_message').html(t1m);
         }
       );
 
@@ -89,6 +122,8 @@ $(function(){
           $('#lavel6').css('border','none');
           $('#lavel4').css('background-color','white');
           $('#lavel6').css('background-color','white');
+          $('.second_board').html(t2n);
+          $('.second_message').html(t2m);
           }
         );
 
@@ -103,6 +138,8 @@ $(function(){
             $('#lavel5').css('border','none');
             $('#lavel5').css('background-color','white');
             $('#lavel4').css('background-color','white');
+            $('.second_board').html(t3n);
+          $('.second_message').html(t3m);
             }
           );
   // -------------------------third------------------------------------
@@ -125,6 +162,8 @@ $(function(){
           $('#lavel9').css('border','none');
           $('#lavel8').css('background-color','white');
           $('#lavel9').css('background-color','white');
+          $('.third_board').html(f1n);
+          $('.third_message').html(f1m);
           }
         );
 
@@ -139,6 +178,8 @@ $(function(){
             $('#lavel9').css('border','none');
             $('#lavel7').css('background-color','white');
             $('#lavel9').css('background-color','white');
+            $('.third_board').html(f2n);
+            $('.third_message').html(f2m);
             }
           );
 
@@ -153,6 +194,8 @@ $(function(){
             $('#lavel8').css('border','none');
             $('#lavel8').css('background-color','white');
             $('#lavel7').css('background-color','white');
+            $('.third_board').html(f3n);
+            $('.third_message').html(f3m);
               }
             );
   // -------------------------four------------------------------------
@@ -175,6 +218,8 @@ $(function(){
           $('#lavel12').css('border','none');
           $('#lavel11').css('background-color','white');
           $('#lavel12').css('background-color','white');
+          $('.four_board').html(ht1n);
+          $('.four_message').html(ht1m);
           }
         );
 
@@ -189,6 +234,8 @@ $(function(){
           $('#lavel12').css('border','none');
           $('#lavel10').css('background-color','white');
           $('#lavel12').css('background-color','white');
+          $('.four_board').html(ht2n);
+          $('.four_message').html(ht2m);
           }
         );
 
@@ -203,6 +250,8 @@ $(function(){
         $('#lavel11').css('border','none');
         $('#lavel11').css('background-color','white');
         $('#lavel10').css('background-color','white');
+        $('.four_board').html(ht3n);
+        $('.four_message').html(ht3m);
         }
       );
 });
