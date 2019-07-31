@@ -17,9 +17,6 @@
         <div id="curry_image">
           <p><img src="img/<?php echo $img;?>"></p>
         </div>
-        <div id="color_image">
-          <p class="color">　</p>
-        </div>
       </div>
       <div id="description">
         <h1>これがあなたのカレーです！</h1>

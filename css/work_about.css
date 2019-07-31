@@ -1,6 +1,10 @@
 *{
   margin:0 auto;
   padding:0 auto;
+
+}
+body{
+  overflow-y:hidden;
 }
 img{
   max-width:500px;

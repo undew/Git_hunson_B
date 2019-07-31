@@ -29,30 +29,31 @@ $post_row = fetch_all($stmt);
 
 $query = "SELECT * FROM spice WHERE id = ?";
 $stmt = $cn->prepare($query);
-$stmt->bind_param("i",$array['main'][$post_row[0]['main'] - 1]);
+$stmt->bind_param("i",$post_row[0]['main']);
 $stmt->execute();
 $main = fetch_all($stmt);
 
 $query = "SELECT * FROM spice WHERE id = ?";
 $stmt = $cn->prepare($query);
-$stmt->bind_param("i",$array['taste'][$post_row[0]['taste'] - 1]);
+$stmt->bind_param("i",$post_row[0]['taste']);
 $stmt->execute();
 $taste = fetch_all($stmt);
 
 $query = "SELECT * FROM spice WHERE id = ?";
 $stmt = $cn->prepare($query);
-$stmt->bind_param("i",$array['flavor'][$post_row[0]['flavor'] - 1]);
+$stmt->bind_param("i",$post_row[0]['flavor']);
 $stmt->execute();
 $flavor = fetch_all($stmt);
 
 $query = "SELECT * FROM spice WHERE id = ?";
 $stmt = $cn->prepare($query);
-$stmt->bind_param("i",$array['hot_taste'][$post_row[0]['hot_taste'] - 1]);
+$stmt->bind_param("i",$post_row[0]['hot_taste']);
 $stmt->execute();
 $hot_taste = fetch_all($stmt);
 
 $stmt->close();
 $cn->close();
+
 
 $name = '';
 $msg  = '';
