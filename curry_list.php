@@ -8,6 +8,12 @@
   </head>
   <body>
     <div id="container">
+      <div id="header">
+        <div id="toppage">
+        <p>カレー一覧へ戻る</p>
+        <p>トップページ</p>
+      </div>
+      </div>
       <div id="result_image">
         <div id="curry_image">
           <p><img src="img/curry.png"></p>

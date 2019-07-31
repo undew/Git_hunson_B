@@ -38,8 +38,22 @@ button:hover{
   height:100vh;
   width:100%;
   grid-template-areas:
+  "areaD areaD"
   "areaA areaB"
   "areaC areaB";
+}
+#header{
+  width:100%;
+  margin:0 auto;
+  padding:0 auto;
+  line-height:90px;
+  grid-area:areaD;
+}
+
+#toppage{
+    display:flex;
+    margin:0 auto;
+    padding:0 auto;
 }
 
 #result_image{
@@ -49,12 +63,12 @@ button:hover{
   animation-delay:4s;
   grid-area:areaA;
   position:relative;
-  top:250%;
+  top:23%;
   left:10%;
 }
 #color_image{
   position:relative;
-  top:-150%;
+  top:-18%;
   left:28%;
 }
 #color_image .color{
@@ -72,12 +86,16 @@ button:hover{
   grid-area:areaB;
 }
 #description h1{
+  position:relative;
+  top:-5%;
   padding:0 auto;
   margin:0 auto;
   padding-top:80px;
   line-height:100px;
 }
 #curry_comment{
+  position:relative;
+  top:-7%;
   border:solid 3px black;
   border-radius:25px 25px/25px 25px;
   height:500px;
@@ -108,7 +126,7 @@ button:hover{
   position:relative;
   text-align:center;
   left:15%;
-  top:10%;
+  top:-100%;
   mardin:0 auto;
   padding:0 auto;
   animation-name:fadein2;
@@ -142,7 +160,7 @@ button:hover{
 }
 .board_table{
   position:absolute;
-  top:75%;
+  top:74%;
   left:60%;
   line-height:30px;
   font-size:18px;
