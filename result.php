@@ -38,11 +38,6 @@ if(isset($_POST['contribute'])) {
   foreach($input as $key => $value) {
     $input[$key] = (string)filter_input(INPUT_POST, $key);
   }
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 9b9555a048b47aa990c876485bbcaf46eca86fcc
   //エラーチェック
   //空白チェック
   if($input['title'] === '') {
@@ -58,11 +53,6 @@ if(isset($_POST['contribute'])) {
   if(mb_strlen($input['user_name']) <= 30) {
     $error_mes['user_name'] = '';
   }
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 9b9555a048b47aa990c876485bbcaf46eca86fcc
 
   //データベースに書き込み
   $sql = "INSERT INTO post(name,main,taste,flavor,hot_taste,post_date,nice) VALUES(?,?,?,?,?,?,0)";
@@ -78,17 +68,8 @@ if(isset($_POST['cook'])) {
 
 
 //材料からカレーを算出
-<<<<<<< HEAD
-//DBから説明読み込み
-
-
-require_once './tpl/result.php';
-=======
-
-
 //DBから説明読み込み
 $sql    = "SELECT FROM WHERE";
 $result = execute_sql($sql);
 
 require_once './tpl/result.php';
->>>>>>> 9b9555a048b47aa990c876485bbcaf46eca86fcc
