@@ -28,14 +28,14 @@ if(isset($_POST['cook'])) {
 if(isset($_POST['write'])) {
   $date     = new DateTimeImmutable();
   $input = array(
-    'title'     => (string)filter_input(INPUT_POST, 'title'),
-    'name'      => (string)filter_input(INPUT_POST, 'name'),
-    'staple_food'      => (string)filter_input(INPUT_POST, 'staple_food'),
-    'taste'     => (string)filter_input(INPUT_POST, 'taste'),
-    'smell'    => (string)filter_input(INPUT_POST, 'smell'),
-    'spiciness' => (string)filter_input(INPUT_POST, 'spiciness'),
-    'post_date' => $date -> format('Y-m-d'),
-    'nice'      => 0,
+    'title'       => (string)filter_input(INPUT_POST, 'title'),
+    'name'        => (string)filter_input(INPUT_POST, 'name'),
+    'staple_food' => (string)filter_input(INPUT_POST, 'staple_food'),
+    'taste'       => (string)filter_input(INPUT_POST, 'taste'),
+    'smell'       => (string)filter_input(INPUT_POST, 'smell'),
+    'spiciness'   => (string)filter_input(INPUT_POST, 'spiciness'),
+    'post_date'   => $date -> format('Y-m-d'),
+    'nice'        => 0,
   );
   echo '<pre>';
   var_dump($input);
