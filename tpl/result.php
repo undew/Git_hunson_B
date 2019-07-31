@@ -25,16 +25,16 @@
         <h1>これがあなたのカレーです！</h1>
         <table>
           <tr>
-            <td>主食名</td><td><?php echo $rows[0]['name']; ?></td>
+            <td>主食名</td><td><?php echo $rows[3]['name']; ?></td>
           </tr>
           <tr>
-            <td>味名</td><td><?php echo $rows[1]['name']; ?></td>
+            <td>味名</td><td><?php echo $rows[0]['name']; ?></td>
           </tr>
           <tr>
-            <td>旨味名</td><td><?php echo $rows[2]['name']; ?></td>
+            <td>旨味名</td><td><?php echo $rows[1]['name']; ?></td>
           </tr>
           <tr>
-            <td>辛味名</td><td><?php echo $rows[3]['name']; ?></td>
+            <td>辛味名</td><td><?php echo $rows[2]['name']; ?></td>
           </tr>
         </table>
       </div>
