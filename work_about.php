@@ -5,9 +5,7 @@ require './config/config.php';
 if(!empty($_GET['id'])){
   $id = $_GET['id'];
 } else {
-  $sort = 'new';
-  $url = 'board.php?sort='.$sort;
-  redirect($url);
+  redirect('board.php?sort=new');
 }
 //メインの投稿を取得
 $query = "SELECT * FROM post WHERE id = ?";
