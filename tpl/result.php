@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/curry_result.css">
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/query_result.js"></script>
+    <!-- <script type="text/javascript" src="js/query_result.js"></script> -->
     <title></title>
   </head>
   <body>

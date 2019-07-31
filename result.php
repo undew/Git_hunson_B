@@ -24,10 +24,13 @@ if(isset($_POST['cook'])) {
     $material[$key] = (string)filter_input(INPUT_POST, $key);
   }
 }
-
+echo '<pre>';
+var_dump($material);
+echo '</pre>';
 
 //材料からカレーを算出
 //DBから説明読み込み
-
+$sql = "SELECT * FROM WHERE ";
+$row = execute_sql($sql);
 
 require_once './tpl/result.php';
