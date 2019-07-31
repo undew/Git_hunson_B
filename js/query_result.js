@@ -25,7 +25,12 @@ $(function(){
       $('.board_click').css('color','white');
       $('.board_click').css('z-index','99');
       $('.board_click').css('color','black');
+<<<<<<< HEAD
       $('.board_click').html('<a href="curry_result.html"><p class="board_click">掲示板へ</p></a>');
+=======
+      $('.board_click').html('<a href="board.php"><p class="board_click">掲示板へ</p></a>');
+
+>>>>>>> f834f61992665c2f098fcd0d28e2677e89f87e40
     }
   );
 

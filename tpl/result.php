@@ -47,10 +47,10 @@
           <input type="hidden" name="spiciness" value="<?php echo $input['spiciness'];?>">
           <table class="board_table">
             <tr>
-              <td>ニックネーム</td><td><input type="text" name="name" value=""></td>
+              <td>ニックネーム</td><td><input type="text" name="name" value="<?php echo $error_mes['name'];?>"></td>
             </tr>
             <tr>
-              <td>カレーの題名</td><td><input type="text" name="title" value=""></td>
+              <td>カレーの題名</td><td><input type="text" name="title" value="<?php echo $error_mes['title']?>"></td>
             </tr>
             <tr>
               <th colspan="2" class="button_submit"><button type="submit" name="write" value="w">投稿！</button></th>

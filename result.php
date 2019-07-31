@@ -16,6 +16,10 @@ $input = array(
   'smell'       => '',
   'spiciness'   => '',
 );
+$error_mes = array(
+  'title' => '',
+  'name'  => '',
+);
 
 
 //カレーの結果受け取り
@@ -37,9 +41,20 @@ if(isset($_POST['write'])) {
     'post_date'   => $date -> format('Y-m-d'),
     'nice'        => 0,
   );
-  echo '<pre>';
-  var_dump($input);
-  echo '</pre>';
+
+  //エラーチェック
+  if($input['title'] == '') {
+    $error_mes['title'] = 'タイトルを入力してください。';
+  }
+  if($input['name'] == '') {
+    $error_mes['title'] = '名前を入力してください。';
+  }
+  if(mb_strlen($input['title']) <= 30) {
+    $error_mes['title'] = '30文字以内で入力してください。';
+  }
+  if(mb_strlen($input['name']) <= 30) {
+    $error_mes['name'] = '30文字以内で入力してください。';
+  }
   $sql = "INSERT INTO post(title,name,main,taste,flavor,hot_taste,post_date,nice) VALUES(?,?,?,?,?,?,?,?)";
   $result = execute_sql($sql, $input);  // 自作関数
 }
