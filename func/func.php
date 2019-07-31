@@ -53,7 +53,7 @@ function execute_sql(string $sql, ...$data) {
     // return;
   }
   mysqli_commit($cn);
-  if(mysqli_stmt_field_count($stmt)){
+  if(mysqli_stmt_field_count($stmt) != 0){
     while ($row = mysqli_fetch_assoc($result)) {
       $rows[] = $row;
     }

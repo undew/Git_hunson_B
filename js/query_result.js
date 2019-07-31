@@ -26,7 +26,6 @@ $(function(){
       $('.board_click').css('z-index','99');
       $('.board_click').css('color','black');
       $('.board_click').html('<a href="curry_result.html"><p class="board_click">掲示板へ</p></a>');
-
     }
   );
 
