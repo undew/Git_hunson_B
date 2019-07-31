@@ -9,6 +9,7 @@
   </head>
   <body>
     <div id="container">
+      <audio src="hamada.wav" autoplay></audio>
       <div id="header">
         <h1>結果発表</h1>
       </div>

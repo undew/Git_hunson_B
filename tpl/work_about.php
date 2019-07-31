@@ -2,7 +2,7 @@
 <html lang="jn" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="work_about.css">
+    <link rel="stylesheet" href="./css/work_about.css">
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/query_result.js"></script>
     <title></title>
