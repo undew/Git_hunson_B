@@ -54,7 +54,6 @@ button:hover{
     display:flex;
     margin:0 auto;
     padding:0 auto;
-<<<<<<< HEAD
     font-weight:bold;
 }
 #toppage p:first-child{
@@ -63,8 +62,6 @@ button:hover{
 #toppage a{
   text-decoration:none;
   color:black;
-=======
->>>>>>> 9b9555a048b47aa990c876485bbcaf46eca86fcc
 }
 
 #result_image{

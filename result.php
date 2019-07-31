@@ -38,7 +38,7 @@ if(isset($_POST['contribute'])) {
   foreach($input as $key => $value) {
     $input[$key] = (string)filter_input(INPUT_POST, $key);
   }
-
+  
   //エラーチェック
   //空白チェック
   if($input['title'] === '') {
@@ -54,7 +54,7 @@ if(isset($_POST['contribute'])) {
   if(mb_strlen($input['user_name']) <= 30) {
     $error_mes['user_name'] = '';
   }
-
+  
 
   //データベースに書き込み
   $sql = "INSERT INTO post(name,main,taste,flavor,hot_taste,post_date,nice) VALUES(?,?,?,?,?,?,0)";

@@ -14,6 +14,7 @@ $(function(){
   $('#lavel1').click(
   function(){
     $('.first_board').css('opacity','1');
+    $('.first_board').html('スパイス１');
     $('.first_message').css('opacity','1');
     $('.first_message').css('transition','0.3s');
       $('.first_h3').html('<img src="img/curry_ko.png" class="img_first"></img>');

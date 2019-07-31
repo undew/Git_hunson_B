@@ -10,15 +10,9 @@
     <div id="container">
       <div id="header">
         <div id="toppage">
-<<<<<<< HEAD
         <p><a href="curry_result.html">カレー一覧へ戻る</a></p>
         <p><a href="index.html">トップページ</a></p>
         </div>
-=======
-        <p>カレー一覧へ戻る</p>
-        <p>トップページ</p>
-      </div>
->>>>>>> 9b9555a048b47aa990c876485bbcaf46eca86fcc
       </div>
       <div id="result_image">
         <div id="curry_image">
