@@ -30,7 +30,7 @@ echo '</pre>';
 
 //材料からカレーを算出
 //DBから説明読み込み
-$sql = "SELECT * FROM WHERE ";
-$row = execute_sql($sql);
+$sql  = "SELECT name FROM spice WHERE id IN(?,?,?,?)";
+$rows = execute_sql($sql, $material);
 
 require_once './tpl/result.php';
