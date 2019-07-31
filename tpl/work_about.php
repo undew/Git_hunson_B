@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="work_about.css">
+  <link rel="stylesheet" href="./css/work_about.css">
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/query_result.js"></script>
   <title></title>
@@ -12,11 +12,11 @@
 <body>
   <div id="container">
     <div id="header">
-      <p>カレー一覧へもどる</p>
+      <p><a href="board.php?sort=new">カレー一覧へもどる</a></p>
     </div>
     <div id="result_image">
       <div id="curry_image">
-        <p><img src="curry.png"></p>
+        <p><img src="./img/curry.png"></p>
       </div>
     </div>
     <div id="description">
