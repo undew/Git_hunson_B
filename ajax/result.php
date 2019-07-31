@@ -38,6 +38,7 @@ if(isset($_POST['contribute'])) {
   foreach($input as $key => $value) {
     $input[$key] = (string)filter_input(INPUT_POST, $key);
   }
+  $input['post_date'] = $date -> format('Y-m-d');
   
   //エラーチェック
   //空白チェック
@@ -71,9 +72,9 @@ if(isset($_POST['cook'])) {
 
 //材料からカレーを算出
 
-
 //DBから説明読み込み
-$sql    = "SELECT FROM WHERE";
-$result = execute_sql($sql);
+$sql = "SELECT id,name,kind,description,little_description";
+$description = execute_sql($sql);
+
 
 require_once './tpl/result.php';
