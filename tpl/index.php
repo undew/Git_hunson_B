@@ -21,6 +21,7 @@
 
         <h1 class="top_title">カレーを作ろう！</h1>
         <p class="top_title"><a href="#first">START</a></p>
+        <p class="bottom_title"><a href="board.php">掲示板</a></p>
         <img src="img/curry.png" class="img_top">
       </div>
       <div id="first">
