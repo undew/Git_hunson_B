@@ -1,76 +1,56 @@
-<?PHP
-//*************************
-//課題No.00
-//作成日:2019//
-//作成者:峯松康二
-//クラス:IH-12A-905
-//*************************
-
-require_once './func/func.php';
-require_once './config/config.php';
-
-
-$input = array(
-  'title'       => '',
-  'user_name'   => '',
-  'staple_food' => '',
-  'taste'       => '',
-  'smell'       => '',
-  'spiciness'   => '',
-);
-$material = array(
-  'staple_food' => '',
-  'taste'       => '',
-  'smell'       => '',
-  'spiciness'   => '',
-);
-$error_mes = array(
-  'title'       => '',
-  'user_name'   => '',
-);
-$date     = new DateTimeImmutable();
-
-
-//投稿ボタンを押したとき
-if(isset($_POST['contribute'])) {
-
-  //値受け取り
-  foreach($input as $key => $value) {
-    $input[$key] = (string)filter_input(INPUT_POST, $key);
-  }
-
-  //エラーチェック
-  //空白チェック
-  if($input['title'] === '') {
-    $error_mes['title'] = 'タイトルを入力してください。';
-  }
-  if($input['user_name'] === '') {
-    $error_mes['user_name'] = 'ニックネームを入力してください。';
-  }
-  //文字数チェック
-  if(mb_strlen($input['title']) <= 30) {
-    $error_mes['title'] = '';
-  }
-  if(mb_strlen($input['user_name']) <= 30) {
-    $error_mes['user_name'] = '';
-  }
-
-
-  //データベースに書き込み
-  $sql = "INSERT INTO post(name,main,taste,flavor,hot_taste,post_date,nice) VALUES(?,?,?,?,?,?,0)";
-  $result = execute_sql($sql, $input);  // 自作関数
-}
-
-//カレーの結果受け取り
-if(isset($_POST['cook'])) {
-  foreach($material as $key => $value) {
-    $material[$key] = (string)filter_input(INPUT_POST, $key);
-  }
-}
-
-
-//材料からカレーを算出
-//DBから説明読み込み
-
-
-require_once './tpl/result.php';
+<!DOCTYPE html>
+<html lang="jn" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/curry_result.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/query_result.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>結果発表</h1>
+      </div>
+      <div id="result_image">
+        <div id="curry_image">
+          <p><img src="img/curry.png"></p>
+        </div>
+        <div id="color_image">
+          <p class="color">　</p>
+        </div>
+      </div>
+      <div id="description">
+        <h1>これがあなたのカレーです！</h1>
+        <table>
+          <tr>
+            <td>主食名</td><td>あああああああああああああああ</td>
+          </tr>
+          <tr>
+            <td>味名</td><td>あああああああああああああああ</td>
+          </tr>
+          <tr>
+            <td>旨味名</td><td>あああああああああああああああ</td>
+          </tr>
+          <tr>
+            <td>辛味名</td><td>あああああああああああああああ</td>
+          </tr>
+        </table>
+      </div>
+      <div id="board_form">
+        <p class="board_click">投稿しよう！</p>
+        <table class="board_table">
+          <tr>
+            <td>ニックネーム</td><td><input type="text" name="" value=""></td>
+          </tr>
+          <tr>
+            <td>カレーの題名</td><td><input type="text" name="" value=""></td>
+          </tr>
+          <tr>
+            <th colspan="2" class="button_submit"><button type="submit">投稿！</button></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
